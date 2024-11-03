@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up || Form</title>
+  <!-- css link -->
+  <link rel="stylesheet" href="./SignUpStyle.css">
+  <!-- font family -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <div id="container">
+    <h2>Create Your Account</h2>
+    <label for="email">
+        Email:
+        <input type="email"  id="SignUpEmail" placeholder="Enter your Email Address..." required>
+    </label>
+    <label for="password">
+        Password:
+        <input type="password"  id="signUpPassword" placeholder="******">
+    </label>
+    <button   id="signUpBtn" >Sign Up</button>
+    <p id="redirect-text"><strong>Already have an account? </strong><a href="/Sign In/signIn.html" class="signUpLink">Sign In</a></p>
+</div>
+
+
+  <!-- firebase.js -->
+<script type="module" src="./FIREBASE/fireBase.js"></script>
+<!-- Sweet Alert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- signup.js -->
+<script type="module" src="./signup.js"></script>
+</body>
+</html>

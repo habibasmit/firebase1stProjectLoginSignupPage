@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In || Form</title>
+    <!-- scc link -->
+    <link rel="stylesheet" href="signInStyle.css">
+     <!-- Font-Family  -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+  <div id="container">
+    <h2 id="title">Sign In</h2>
+    <form>
+        <label for="signInEmail">
+            Email:
+            <input type="email" id="signInEmail" placeholder="Enter your Email Address..." required>
+        </label>
+        <label for="signInPassword">
+            Password:
+            <input type="password" id="signInPassword" placeholder="******" required>
+        </label>
+        <button type="button" id="signInButton">Sign In</button>
+    </form>
+    <p id="footerText">Don't have an account? <a href="/index.html" id="signInLink">Sign Up</a></p>
+ </div>
+
+
+<!-- firebase -->
+<script type="module" src="../FIREBASE/fireBase.js"></script> 
+<!-- Sweet Alert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- js -->
+<script type="module" src="./signIn.js"></script>
+</body>
+</html>
